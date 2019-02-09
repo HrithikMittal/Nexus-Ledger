@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var Details = require("../app/models/cash");
-var Ledger = require("../app/models/ledger");
+var Ledger = require("app/models/ledger");
 var MongoClient = require("mongodb").MongoClient;
 
 
@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 3003;
 
 // Connect to DB
-var url = "mongodb://localhost:27017/transaction";
+var url = "mongodb://adhi:password123@ds141796.mlab.com:41796/signup";
 
 MongoClient.connect(
     url,
