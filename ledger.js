@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
-var Details = require("../app/models/cash");
+var Details = require("app/models/cash");
 var Ledger = require("app/models/ledger");
 var MongoClient = require("mongodb").MongoClient;
 
