@@ -35,14 +35,6 @@ MongoClient.connect(url, (err, db) => {
     console.log("FYI...There is some processing currently going down");
     next();
   });
-
-  // test route
-  router.get("/", function(req, res) {
-    res.json({
-      message: "Welcome !"
-    })
-  });
-  
   var url = "mongodb://localhost:27017/transaction";;
 
 MongoClient.connect(
